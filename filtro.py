@@ -26,7 +26,9 @@ st.markdown('<p style="text-align:center;">Esta API tiene como propósito poder 
 
     #   Creación Tabla
 
-df = pd.read_excel(r'C:\Users\Cesar\Downloads\aa.xlsx',sheet_name=1)
+# df = pd.read_excel(r'C:\Users\Cesar\Downloads\aa.xlsx',sheet_name=1)
+
+df = pd.read_excel(r'Adjuntos\arancel.xlsx',sheet_name=1)
 df.index = df['Especialidad']
 df = df.drop('Especialidad', axis=1)
 df = df.sort_index(ascending=True)
