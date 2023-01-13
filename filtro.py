@@ -10,8 +10,8 @@ import pandas as pd
 
     #   API
 
-logo_icono = Image.open(r'Adjuntos\Logo_solo.png')
-logo_normal = Image.open(r'Adjuntos\YJB_Logo.png')
+logo_icono = Image.open('Adjuntos\Logo_solo.png')
+logo_normal = Image.open('Adjuntos\YJB_Logo.png')
 
 # logo_icono = Image.open(r'C:\Users\Cesar\Desktop\YJB\Biomecánica\Miscelaneo\Logo_solo.png')
 # logo_normal = Image.open(r'C:\Users\Cesar\Desktop\YJB\Biomecánica\Miscelaneo\YJB_Logo.png')
@@ -28,7 +28,7 @@ st.markdown('<p style="text-align:center;">Esta API tiene como propósito poder 
 
 # df = pd.read_excel(r'C:\Users\Cesar\Downloads\aa.xlsx',sheet_name=1)
 
-df = pd.read_excel(r'Adjuntos\arancel.xlsx',sheet_name=1)
+df = pd.read_excel('Adjuntos\arancel.xlsx',sheet_name=1)
 df.index = df['Especialidad']
 df = df.drop('Especialidad', axis=1)
 df = df.sort_index(ascending=True)
