@@ -40,9 +40,9 @@ df['Familia'] = df['Familia'].astype(int)
 df['Familia'] = df['Familia'].apply('{:,}'.format)
 df = df.replace('0', '')
 
-st.write('Lista de Descuentos Actuales:')
-dctos = pd.DataFrame([['20 %', '40 %']], index=['Descuento [%]'], columns=['Convenio / Alianza', 'Familia'])
-st._legacy_dataframe(dctos)
+# st.write('Lista de Descuentos Actuales:')
+# dctos = pd.DataFrame([['20 %', '40 %']], index=['Descuento [%]'], columns=['Convenio / Alianza', 'Familia'])
+# st._legacy_dataframe(dctos)
 
 st.write('---')
 
